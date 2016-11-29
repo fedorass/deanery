@@ -1,0 +1,12 @@
+<sm-sidebar class="inverted grey vertical menu no-scroll" #sidebar> 
+    <sm-item class="small inverted active header" icon="sidebar">{{name}}</sm-item>
+    <sm-item>
+        <sm-input icon="search" [(model)]="pattern" class="right fluid inverted transparent" placeholder="Пошук..."></sm-input>
+    </sm-item>
+    
+    <sm-loader [complete]="entities" class="inverted" text="Loading..."></sm-loader>
+    
+    <div *ngIf="entities" class="ui basic segment" style="height: 100%; overflow-y: auto;">
+        <a class="item" *ngFor="let entity of entities" (click)="select(entity)">{{entity.name}}</a>
+    </div>
+</sm-sidebar>

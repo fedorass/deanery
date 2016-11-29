@@ -1,0 +1,3 @@
+{
+    "/faculties/:id/assignedDepartments": "/faculties/:id/departments"
+}

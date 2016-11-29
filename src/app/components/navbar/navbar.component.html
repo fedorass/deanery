@@ -1,0 +1,9 @@
+<sm-menu class="ui blue inverted large">
+    <sm-item class="active header" icon="university"><b>РДГУ</b></sm-item>
+    <a sm-item icon="student" (click)="showFacultySidebar()">Факультети</a>
+    <a sm-item icon="users" (click)="showDepartmentSidebar()">Кафедри</a>
+</sm-menu>
+
+<navbar-item [entities]="faculties" name="Факультети" (openDetails)=gotoFacultyDetails($event) #facultySidebar></navbar-item>
+
+<navbar-item [entities]="departments" name="Кафедри" (openDetails)=gotoDepartmentDetails($event) #departmentSidebar></navbar-item>

@@ -1,0 +1,13 @@
+<sm-button class="right floated tiny basic" icon="add" style="margin-top: 1em">Добавити кафедру</sm-button>
+
+<sm-list class="divided selection component-container">
+    <sm-item *ngFor="let department of assignedDepartments" class="v-list-item"> 
+        <div class="right floated content v-list-item-hidden">
+            <i class="red remove circle outline link icon"></i>
+        </div>
+        <div class="content">
+            {{department.name}}            
+        </div>
+    </sm-item>
+</sm-list>
+    

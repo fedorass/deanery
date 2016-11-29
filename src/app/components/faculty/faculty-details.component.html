@@ -1,0 +1,20 @@
+<div class="page-header">
+    <div class="ui left floated header">
+        <i class="student icon"></i>
+        <div class="content">Факультет "{{faculty.name}}"</div>
+    </div>
+    <sm-button class="right floated circular" icon="settings"></sm-button>
+</div>
+
+<div class="ui clearing divider"></div> 
+
+<div class="component-container">
+    <sm-menu class="secondary pointing">
+        <a sm-item [routerLink]="['./departments']" [routerLinkActive]="'active'">Обслуговуючі кафедри</a>
+        <a sm-item [routerLink]="['./specialties']" [routerLinkActive]="'active'">Спеціальності</a>
+        <a sm-item [routerLink]="['./courses']" [routerLinkActive]="'active'">Предмети</a>
+    </sm-menu>
+    
+    <router-outlet></router-outlet>
+
+</div>
