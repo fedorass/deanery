@@ -10,7 +10,7 @@ import { DepartmentResolver } from './services/department-resolver.service';
 
 import { FacultyDetailsComponent } from './components/faculty/faculty-details.component';
 import { AssignedDepartmentsComponent } from './components/faculty/assigned-departments.component';
-import { SpecialtiesComponent } from './components/faculty/specialties.component';
+import { SpecialitiesComponent } from './components/faculty/specialities.component';
 import { CoursesComponent } from './components/faculty/courses.component';
 
 import { DepartmentDetailsComponent } from './components/department/department-details.component';
@@ -40,8 +40,8 @@ import { UniversityDetailsComponent } from './components/university/university-d
             }
           },
           {
-            path: 'specialties',
-            component: SpecialtiesComponent
+            path: 'specialities',
+            component: SpecialitiesComponent
           },
           {
             path: 'courses',

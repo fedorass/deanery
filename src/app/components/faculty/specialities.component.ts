@@ -3,6 +3,8 @@ import { ActivatedRoute, Params }   from '@angular/router';
 
 import { FacultyService } from '../../services/faculty.service';
 
+import { Speciality } from '../../common/speciality.model';
+
 @Component({
     templateUrl: './specialities.component.html',
     styleUrls: ['./specialities.component.css'],
@@ -10,7 +12,7 @@ import { FacultyService } from '../../services/faculty.service';
 })
 export class SpecialitiesComponent implements OnInit {
     
-    private specialities: any[];
+    private specialities: Speciality[];
     private subscription: any;
     
     constructor(private route: ActivatedRoute, private facultyService: FacultyService) {}

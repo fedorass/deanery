@@ -14,7 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { FacultyDetailsComponent } from './components/faculty/faculty-details.component';
 import { AssignedDepartmentsComponent } from './components/faculty/assigned-departments.component';
-import { SpecialtiesComponent } from './components/faculty/specialties.component';
+import { SpecialitiesComponent } from './components/faculty/specialities.component';
 import { CoursesComponent } from './components/faculty/courses.component';
 
 import { DepartmentDetailsComponent } from './components/department/department-details.component';
@@ -37,7 +37,7 @@ import { UniversityDetailsComponent } from './components/university/university-d
     FooterComponent,
     FacultyDetailsComponent,
     AssignedDepartmentsComponent,
-    SpecialtiesComponent,
+    SpecialitiesComponent,
     CoursesComponent, 
     DepartmentDetailsComponent,
     UniversityDetailsComponent

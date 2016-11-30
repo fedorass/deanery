@@ -6,6 +6,7 @@ import { Observable } from 'rxjs/Observable';
 
 import { Faculty } from '../common/faculty.model';
 import { Department } from '../common/department.model';
+import { Speciality } from '../common/speciality.model';
 
 @Injectable()
 export class FacultyService {
@@ -114,7 +115,7 @@ export class FacultyService {
         return this.http.get(`${this.facultiesUrl}/${id}/assignedDepartments`).map(res => res.json() || { } as Department[]);
     }
 
-    getSpecialities(id: number): Department[] {
+    getSpecialities(id: number): Speciality[] {
         let faculty: Faculty = this.FACULTIES.find(faculty => faculty.id == id);
         if (faculty) {
             return faculty.specialities;
