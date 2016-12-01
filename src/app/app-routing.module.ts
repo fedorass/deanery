@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FacultyService } from './services/faculty.service';
 import { FacultyResolver } from './services/faculty-resolver.service';
 import { AssignedDepartmentsResolver } from './services/assigned-departments-resolver.service';
+import { SpecialitiesResolver } from './services/specialities-resolver.service';
 
 import { DepartmentService } from './services/department.service';
 import { DepartmentResolver } from './services/department-resolver.service';
@@ -41,7 +42,10 @@ import { UniversityDetailsComponent } from './components/university/university-d
           },
           {
             path: 'specialities',
-            component: SpecialitiesComponent
+            component: SpecialitiesComponent,
+            resolve: {
+              specialities: SpecialitiesResolver
+            }
           },
           {
             path: 'courses',
@@ -72,6 +76,7 @@ import { UniversityDetailsComponent } from './components/university/university-d
     FacultyService,
     FacultyResolver,
     AssignedDepartmentsResolver,
+    SpecialitiesResolver,
     DepartmentService,
     DepartmentResolver
   ]
