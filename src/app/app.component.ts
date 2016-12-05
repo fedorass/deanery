@@ -3,6 +3,7 @@ import { Event as RouterEvent, Router, NavigationStart, NavigationEnd, Navigatio
 
 import './rxjs-operators';
 import '../../public/css/styles.css';
+import '../../public/images/rshu.jpg';
 
 @Component({
   selector: 'app',

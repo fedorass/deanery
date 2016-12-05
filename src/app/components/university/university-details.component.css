@@ -1,0 +1,14 @@
+:host {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+}
+
+.v-centered-image-box {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
