@@ -1,3 +1,4 @@
 {
-    "/faculties/:id/assignedDepartments": "/faculties/:id/departments"
+    "/faculties/:id/assignedDepartments": "/faculties/:id/departments",
+    "specialities/:id/courses": "/courses?specialityId=:id"
 }

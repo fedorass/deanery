@@ -1,0 +1,17 @@
+<sm-button class="right floated tiny basic" icon="add" style="margin-top: 1em">Добавити викладача</sm-button>
+
+<div class="ui horizontal divider">
+    <i class="users icon"></i>
+</div> 
+
+<sm-list class="divided selection component-container">
+    <sm-item *ngFor="let teacher of teachers" [header]="teacher.lastName + ' ' + teacher.firstName + ' ' + teacher.middleName" class="v-list-item"> 
+        <div class="right floated content v-list-item-hidden">
+            <i class="write link icon"></i>
+            <i class="red remove circle outline link icon"></i>
+        </div>
+        <div class="content">
+            {{teacher.position}}
+        </div>
+    </sm-item>
+</sm-list>

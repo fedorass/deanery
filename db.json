@@ -46,31 +46,46 @@
             {
                 "id": 1,
                 "name": "Математика та інформатика",
+                "discipline": "Фізико-математичні науки",
+                "direction": "Математика",
+                "specialization": "Інформатика",
                 "facultyId": 1
             },
             {
                 "id": 2,
                 "name": "Математика та фізика",
+                "discipline": "Фізико-математичні науки",
+                "direction": "Математика",
+                "specialization": "Фізика",
                 "facultyId": 1
             },
             {
                 "id": 3,
                 "name": "Математика та економіка",
+                "discipline": "Фізико-математичні науки",
+                "direction": "Математика",
+                "specialization": "Економіка",
                 "facultyId": 1
             },
             {
                 "id": 4,
                 "name": "Прикладна математика",
+                "discipline": "Системні науки та кібернетика",
+                "direction": "Прикладна математика",                 
                 "facultyId": 1
             },
             {
                 "id": 5,
                 "name": "Інформатика",
+                "discipline": "Системні науки та кібернетика",
+                "direction": "Інформатика",                
                 "facultyId": 1
             },
             {
                 "id": 6,
                 "name": "Комп’ютерні науки та інформаційні технології",
+                "discipline": "Системні науки та кібернетика",
+                "direction": "Комп’ютерні науки",                 
                 "facultyId": 1
             }
         ],
@@ -281,5 +296,165 @@
             }
         ],
     "courses": [
+            {
+                "id": 1,
+                "code": "ПП06",
+                "name": "Елементарна математика",
+                "specialityId": 3
+            }
+        ],
+    "teachers": [
+            {
+                "id": 1,
+                "firstName": "Михайло",
+                "lastName": "Бойчура",
+                "middleName": "Володимирович",
+                "position": "аспірант",
+                "departmentId": 1
+            },
+            {
+                "id": 2,
+                "firstName": "Андрій",
+                "lastName": "Бомба",
+                "middleName": "Ярославович",
+                "position": "професор",
+                "departmentId": 1
+            },
+            {
+                "id": 3,
+                "firstName": "Віра",
+                "lastName": "Вороницька",
+                "middleName": "Михайлівна",
+                "position": "старший викладач",
+                "departmentId": 1
+            },
+            {
+                "id": 4,
+                "firstName": "Володимир",
+                "lastName": "Гаврилюк",
+                "middleName": "Іванович",
+                "position": "доцент",
+                "departmentId": 1
+            },
+            {
+                "id": 5,
+                "firstName": "Сергій",
+                "lastName": "Гаврюсєв ",
+                "middleName": "Михайлович",
+                "position": "старший викладач",
+                "departmentId": 1
+            },
+            {
+                "id": 6,
+                "firstName": "Сергій",
+                "lastName": "Каштан",
+                "middleName": "Степанович",
+                "position": "доцент",
+                "departmentId": 1
+            },
+            {
+                "id": 7,
+                "firstName": "Тетяна",
+                "lastName": "Кирик",
+                "middleName": "Анатоліївна",
+                "position": "старший викладач",
+                "departmentId": 1
+            },
+            {
+                "id": 8,
+                "firstName": "Юрій",
+                "lastName": "Климюк",
+                "middleName": "Євгенович",
+                "position": "доцент",
+                "departmentId": 1
+            },
+            {
+                "id": 9,
+                "firstName": "Василь",
+                "lastName": "Кот",
+                "middleName": "Васильович",
+                "position": "доцент",
+                "departmentId" : 1
+            },
+            {
+                "id": 10,
+                "firstName": "Катерина",
+                "lastName": "Малаш",
+                "middleName": "Миколаївна",
+                "position": "аспірант",
+                "departmentId": 1
+            },
+            {
+                "id": 11,
+                "firstName": "Ігор",
+                "lastName": "Мороз",
+                "middleName": "Петрович",
+                "position": "доцент",
+                "departmentId" : 1
+            },
+            {
+                "id": 12,
+                "firstName": "Олена",
+                "lastName": "Присяжнюк",
+                "middleName": "Вікторівна",
+                "position": "викладач",
+                "departmentId" : 1
+            },
+            {
+                "id": 13,
+                "firstName": "Алеся",
+                "lastName": "Сінчук",
+                "middleName": "Михайлівна",
+                "position": "викладач",
+                "departmentId" : 1
+            },
+            {
+                "id": 14,
+                "firstName": "Ольга",
+                "lastName": "Соколовська",
+                "middleName": "Петрівна",
+                "position": "доцент",
+                "departmentId" : 1
+            },
+            {
+                "id": 15,
+                "firstName": "Андрій",
+                "lastName": "Сяський",
+                "middleName": "Олексійович",
+                "position": "професор",
+                "departmentId" : 1
+            },
+            {
+                "id": 16,
+                "firstName": "Володимир",
+                "lastName": "Сяський",
+                "middleName": "Андрійович",
+                "position": "доцент",
+                "departmentId" : 1
+            },
+            {
+                "id": 17,
+                "firstName": "Микола",
+                "lastName": "Шахрайчук",
+                "middleName": "Іович",
+                "position": "доцент",
+                "departmentId" : 1
+            },
+            {
+                "id": 18,
+                "firstName": "Наталія",
+                "lastName": "Шевцова",
+                "middleName": "Вікторівна",
+                "position": "доцент",
+                "departmentId" : 1
+            },
+            {
+                "id": 19,
+                "firstName": "Сергій",
+                "lastName": "Ярощак",
+                "middleName": "Вікторович",
+                "position": "доцент",
+                "departmentId" : 1
+            }            
         ]
 }

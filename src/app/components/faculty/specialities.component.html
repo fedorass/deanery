@@ -1,12 +1,19 @@
 <sm-button class="right floated tiny basic" icon="add" style="margin-top: 1em">Добавити спеціальність</sm-button>
 
+<div class="ui horizontal divider">
+    <i class="archive icon"></i>
+</div> 
+
 <sm-list class="divided selection component-container">
-    <sm-item *ngFor="let speciality of specialities" class="v-list-item"> 
+    <sm-item *ngFor="let speciality of specialities" [header]="speciality.name" class="v-list-item"> 
         <div class="right floated content v-list-item-hidden">
             <i class="red remove circle outline link icon"></i>
         </div>
         <div class="content">
-            {{speciality.name}}            
+            галузь знань '{{speciality.discipline}}'&nbsp;напрям '{{speciality.direction}}'
+            <span *ngIf="speciality.specialization">
+                &nbsp;спеціалізація '{{speciality.specialization}}'
+            </span>
         </div>
     </sm-item>
 </sm-list>

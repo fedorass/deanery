@@ -1,0 +1,37 @@
+<div class="ui basic segment" style="margin-top: 10px">
+    <sm-loader [complete]="specialities" class="inverted"></sm-loader>
+    
+    <div class="ui padded grid">
+        <div class="six wide column">
+            <sm-select placeholder="Виберіть спеціальність..." [(model)]="speciality" class="fluid search">
+                <option *ngFor="let speciality of specialities" value="{{speciality.id}}">{{speciality.name}}</option>
+            </sm-select>
+        </div>
+        <div class="four wide column">
+            <sm-select placeholder="Виберіть курс..." [(model)]="year" class="fluid search">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </sm-select>              
+        </div>
+        <div class="two wide column">
+            <sm-button (click)="showCourse()" [disabled]="!speciality || !year">Показати</sm-button>
+        </div>
+    </div>
+    
+    <div class="ui divider"></div>
+    
+    <sm-list class="divided selection component-container">
+        <sm-item *ngFor="let course of courses" class="v-list-item"> 
+            <div class="right floated content v-list-item-hidden">
+                <i class="red remove circle outline link icon"></i>
+            </div>
+            <div class="content">
+                {{course.name}}            
+            </div>
+        </sm-item>
+    </sm-list>
+    
+</div>

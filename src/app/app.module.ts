@@ -18,6 +18,7 @@ import { SpecialitiesComponent } from './components/faculty/specialities.compone
 import { CoursesComponent } from './components/faculty/courses.component';
 
 import { DepartmentDetailsComponent } from './components/department/department-details.component';
+import { TeachersComponent } from './components/department/teachers.component';
 
 import { UniversityDetailsComponent } from './components/university/university-details.component';
 
@@ -40,6 +41,7 @@ import { UniversityDetailsComponent } from './components/university/university-d
     SpecialitiesComponent,
     CoursesComponent, 
     DepartmentDetailsComponent,
+    TeachersComponent,
     UniversityDetailsComponent
   ],
   

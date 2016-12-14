@@ -15,6 +15,11 @@
 
 <div class="ui clearing divider"></div> 
 
-<div class="ui tertiary segment component-container" style="margin: 0">
+<div class="component-container">
+    <sm-menu class="secondary pointing">
+        <a sm-item [routerLink]="['./teachers']" [routerLinkActive]="'active'">Викладачі</a>
+    </sm-menu>
     
+    <router-outlet></router-outlet>
+
 </div>

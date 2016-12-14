@@ -8,6 +8,7 @@ import { SpecialitiesResolver } from './services/specialities-resolver.service';
 
 import { DepartmentService } from './services/department.service';
 import { DepartmentResolver } from './services/department-resolver.service';
+import { TeachersResolver } from './services/teachers-resolver.service';
 
 import { FacultyDetailsComponent } from './components/faculty/faculty-details.component';
 import { AssignedDepartmentsComponent } from './components/faculty/assigned-departments.component';
@@ -15,6 +16,7 @@ import { SpecialitiesComponent } from './components/faculty/specialities.compone
 import { CoursesComponent } from './components/faculty/courses.component';
 
 import { DepartmentDetailsComponent } from './components/department/department-details.component';
+import { TeachersComponent } from './components/department/teachers.component';
 
 import { UniversityDetailsComponent } from './components/university/university-details.component';
 
@@ -59,7 +61,20 @@ import { UniversityDetailsComponent } from './components/university/university-d
         component: DepartmentDetailsComponent,
         resolve: {
             department: DepartmentResolver
-        }        
+        },
+        children: [  
+          { 
+            path: '',
+            redirectTo: 'teachers'
+          },
+          {
+            path: 'teachers',
+            component: TeachersComponent,
+            resolve: {
+              teachers: TeachersResolver
+            }            
+          }
+        ]
       },      
       { 
         path: '', 
@@ -78,7 +93,8 @@ import { UniversityDetailsComponent } from './components/university/university-d
     AssignedDepartmentsResolver,
     SpecialitiesResolver,
     DepartmentService,
-    DepartmentResolver
+    DepartmentResolver,
+    TeachersResolver
   ]
   
 })
