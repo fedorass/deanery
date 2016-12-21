@@ -9,6 +9,7 @@ import { Course } from '../../common/course.model';
 
 @Component({
     templateUrl: './courses.component.html',
+    styleUrls: ['./courses.component.css'],
     providers: [FacultyService, SpecialityService]
 })
 export class CoursesComponent implements OnInit {
@@ -38,9 +39,13 @@ export class CoursesComponent implements OnInit {
     }
     
     showCourse(): void {
-        this.specialityService.getCourses(this.speciality).subscribe(courses => {
-            this.courses = courses;
-        });
+        console.log(this.speciality && this.year);
+        
+        if (this.speciality && this.year) {
+            this.specialityService.getCourses(this.speciality).subscribe(courses => {
+                this.courses = courses;
+            });
+        }
     }
     
 }

@@ -300,8 +300,105 @@
                 "id": 1,
                 "code": "ПП06",
                 "name": "Елементарна математика",
-                "specialityId": 3
-            }
+                "specialityId": 3,
+                "departmentId": 4,
+                "hours": [
+                    {
+                        "id": 1,
+                        "semester": 1,
+                        "lecture": 22,
+                        "practical": 26,
+                        "laboratory": 0,
+                        "independent": 72,
+                        "course": 0,
+                        "control": {
+                            "type": "залік",
+                            "hours": 1
+                        }   
+                    },
+                    {
+                        "id": 2,
+                        "semester": 2
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "code": "ПП07",
+                "name": "Математичний аналіз",
+                "specialityId": 3,
+                "departmentId": 3                
+            },
+            {
+                "id": 3,
+                "code": "ПП08",
+                "name": "Аналітична геометрія",
+                "specialityId": 3,
+                "departmentId": 3                
+            },
+            {
+                "id": 4,
+                "code": "ПП11",
+                "name": "Дискретна математика",
+                "specialityId": 3,
+                "departmentId": 3                
+            },
+            {
+                "id": 5,
+                "code": "ПП17",
+                "name": "Вступ до вищої математики",
+                "specialityId": 3,
+                "departmentId": 3                
+            },
+            {
+                "id": 6,
+                "code": "ГЕ05",
+                "name": "Іноземна мова (за професійним спрямуванням)",
+                "specialityId": 3,
+                "departmentId": 14                
+            },
+            {
+                "id": 7,
+                "code": "ПП15",
+                "name": "Безпека життєдіяльності",
+                "specialityId": 3,
+                "departmentId": 6                
+            },
+            {
+                "id": 8,
+                "code": "ПП09",
+                "name": "Лінійна алгебра",
+                "specialityId": 3,
+                "departmentId": 3                
+            },
+            {
+                "id": 9,
+                "code": "ПП21",
+                "name": "Інформаційно-комунікаційні технології",
+                "specialityId": 3,
+                "departmentId": 2                
+            },
+            {
+                "id": 10,
+                "code": "ПП06",
+                "name": "Інформатика",
+                "specialityId": 3,
+                "departmentId": 2                
+            },
+            {
+                "id": 11,
+                "code": "ПП17.2",
+                "name": "Додаткові розділи дискретної математики*/ Додаткові розділи математичного аналізу",
+                "specialityId": 3,
+                "departmentId": 3                
+            },
+            {
+                "id": 12,
+                "code": "ПП17.3",
+                "name": "Основи Internet",
+                "specialityId": 3,
+                "departmentId": 2                
+            }            
         ],
     "teachers": [
             {
